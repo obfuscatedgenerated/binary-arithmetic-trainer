@@ -4,7 +4,7 @@ A small program to revise binary arithmetic and conversion.
 
 ## Setup
 
-[Click here to download a ZIP](https://github.com/obfuscatedgenerated/binary-arithmetic-trainer/archive/refs/heads/main.zip)
+[Click here to download a ZIP](https://github.com/obfuscatedgenerated/binary-arithmetic-trainer/archive/refs/heads/main.zip) and be sure to extract it before running `main.py` in the `src` folder.
 
 OR
 
@@ -29,4 +29,4 @@ OR
 py .\src\main.py
 ```
 
-Or you can double click on the main.py file in the src folder, I guess?
+Or you can double click on the `main.py` file in the `src` folder, I guess?
