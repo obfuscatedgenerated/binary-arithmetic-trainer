@@ -13,7 +13,3 @@ python3 ./src/main.py
 ```
 py .\src\main.py
 ```
-
-## Modes
-
-- 2's complement conversion
