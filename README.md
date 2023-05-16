@@ -1,6 +1,6 @@
 # Binary Arithmetic Trainer
 
-Just a little script to revise binary arithmetic and conversion.
+A small program to revise binary arithmetic and conversion.
 
 ## Usage
 
