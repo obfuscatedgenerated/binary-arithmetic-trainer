@@ -15,3 +15,5 @@ python3 ./src/main.py
 ```
 py .\src\main.py
 ```
+
+Or you can double click on the main.py file in the src folder, I guess?
