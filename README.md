@@ -4,7 +4,9 @@ A small program to revise binary arithmetic and conversion.
 
 ## Usage
 
-No dependencies needed, just run main.py in src:
+**You need Python 3.6 or higher to run this program.**
+
+No external dependencies needed, just run main.py in src:
     
 ```bash
 python3 ./src/main.py
