@@ -136,10 +136,6 @@ def fip_game():
                 print(f"Incorrect. The answer was {s}.")
 
 
-def norm_game():
-    pass
-
-
 def flp_game():
     m_bits = take_valid_int_in("How many bits for the mantissa including sign bit? ", 2, None)
     e_bits = take_valid_int_in("How many bits for the exponent? ", 1, None)

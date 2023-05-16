@@ -1,14 +1,20 @@
 from util import take_valid_int_in
 
 from twos_complement import tc_game
-from floating_point import fip_game, norm_game, flp_game
+from arithmetic import add_game, sub_game
+from floating_point import fip_game, flp_game
 
 def main():
     games = {
         "2's complement (to/from denary)": tc_game,
+        "Addition of integers": add_game,
+        "Subtraction of integers": sub_game,
         "Fixed point (to/from denary)": fip_game,
         "Floating point (to/from denary)": flp_game,
     }
+
+    # TODO: normalisation game
+    # TODO: floating point addition and subtraction games (normalise both then add/subtract)
 
     game_names = list(games.keys())
     game_funcs = list(games.values())
