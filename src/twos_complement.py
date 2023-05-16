@@ -22,7 +22,7 @@ def int_to_2scomp_str(n: int, bits: int) -> str:
     return bin(n)[2:].zfill(bits)
 
 
-def game():
+def tc_game():
     bits = take_valid_int_in("How many bits? ", 1, None)
     guess_denary = take_bool_in("Guess denary? (y/n) ")
     print()

@@ -1,15 +1,15 @@
 from typing import Union
 
-def take_valid_int_in(prompt: str, min: Union[int, None], max: Union[int, None]) -> int:
-    """Takes a valid integer in the range [min, max].
+def take_valid_float_in(prompt: str, min: Union[int, float, None], max: Union[int, float, None]) -> float:
+    """Takes a valid float number in the range [min, max].
 
     Args:
         prompt (str): The prompt to display.
-        min (int | None): The minimum value. None for no minimum.
-        max (int | None): The maximum value. None for no maximum.
+        min (int | float | None): The minimum value. None for no minimum.
+        max (int | float | None): The maximum value. None for no maximum.
 
     Returns:
-        int: The valid integer.
+        float: The valid number.
     """
 
     if min is not None and max is not None and min > max:
@@ -17,7 +17,7 @@ def take_valid_int_in(prompt: str, min: Union[int, None], max: Union[int, None])
 
     while True:
         try:
-            n = int(input(prompt))
+            n = float(input(prompt))
         except ValueError:
             print("Invalid number.")
             continue
@@ -31,6 +31,29 @@ def take_valid_int_in(prompt: str, min: Union[int, None], max: Union[int, None])
             continue
 
         return n
+    
+
+def take_valid_int_in(prompt: str, min: Union[int, None], max: Union[int, None]) -> int:
+    """Takes a valid integer number in the range [min, max].
+
+    Args:
+        prompt (str): The prompt to display.
+        min (int | None): The minimum value. None for no minimum.
+        max (int | None): The maximum value. None for no maximum.
+
+    Returns:
+        int: The valid number.
+    """
+
+    while True:
+        num = take_valid_float_in(prompt, min, max)
+
+        if num.is_integer():
+            return int(num)
+        else:
+            print("Must be an integer.")
+            continue
+
 
 def take_bool_in(prompt: str):
     """Takes a yes or no input.

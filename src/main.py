@@ -1,9 +1,15 @@
 from util import take_valid_int_in
-from twos_complement import game as twos_complement_game
+
+from twos_complement import tc_game
+from floating_point import fip_game, flp_positive_only_game, flp_with_2s_comp_game
+
 
 def main():
     games = {
-        "2's complement": twos_complement_game
+        "2's complement": tc_game,
+        "Fixed point (positive only)": fip_game,
+        "Floating point (positive only)": flp_positive_only_game,
+        "Floating point (with 2's complement)": flp_with_2s_comp_game
     }
 
     game_names = list(games.keys())
