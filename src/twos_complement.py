@@ -21,6 +21,24 @@ def int_to_2scomp_str(n: int, bits: int) -> str:
 
     return bin(n)[2:].zfill(bits)
 
+def twoscomp_str_to_int(s: str) -> int:
+    """Converts a 2's complement binary string to an integer.
+
+    Args:
+        s (str): The 2's complement binary string.
+
+    Returns:
+        int: The integer.
+    """
+
+    if len(s) < 1:
+        raise ValueError("s must have at least 1 character")
+
+    if s[0] == "0":
+        return int(s, 2)
+    else:
+        return -((1 << len(s)) - int(s, 2))
+
 
 def tc_game():
     bits = take_valid_int_in("How many bits? ", 1, None)
