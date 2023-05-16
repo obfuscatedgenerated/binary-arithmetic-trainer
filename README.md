@@ -4,7 +4,7 @@ Just a little script to revise binary arithmetic and conversion.
 
 ## Usage
 
-Just run main.py in src:
+No dependencies needed, just run main.py in src:
     
 ```bash
 python3 ./src/main.py
