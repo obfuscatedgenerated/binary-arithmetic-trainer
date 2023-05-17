@@ -144,6 +144,7 @@ def flp_game():
     print("Right now, you can only guess denary.")
     print()
     # sometimes you get some super cruel numbers! the bits selection only covers the question, not the converted fixed point number
+    # TODO: perhaps add an option to limit the range of the exponent separately to prevent this?
 
     while True:
         # generate random sequence of 1s and 0s, where the first 2 bits are always 01 (positive) or 10 (if negative allowed)
